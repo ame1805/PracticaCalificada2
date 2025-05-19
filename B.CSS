@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f4fb;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+#participants {
+  height: 200px; /* Cambia 200px por la altura que quieras */
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 strong {
+  color: #d81b60;
+}
+
+.form-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.column {
+  flex: 1;
+    padding: 1rem; /* Añade espacio interno */
+
+}
+
+textarea, input[type="text"], select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #d81b60;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.buttons, .action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  background: #d81b60;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #c2185b;
+}
+
+.result {
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#teamsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.team {
+  background: #fce4ec;
+  border: 2px dashed #d81b60;
+  border-radius: 15px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.team h4 {
+  margin-top: 0;
+  color: #d81b60;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #d81b60;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
