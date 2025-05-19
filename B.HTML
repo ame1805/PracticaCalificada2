@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador de Equipos</title>
+  <link rel="stylesheet" href="B.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Crea <strong>equipos al azar</strong> a partir de una lista de nombres</h2>
+    
+    <div class="form-container">
+      <div class="column">
+        <h3>1. Ingresa los participantes</h3>
+        <textarea id="participants" maxlength="5000" placeholder="Cada participante debe estar en una nueva línea" rows="10"></textarea>
+        <small>Agrega un * para indicar líderes de grupo. Ej: *Líder</small>
+      </div>
+
+      <div class="column">
+        <h3>2. Cómo dividir:</h3>
+        <label><input type="radio" name="divide" value="teams" checked> Cantidad de equipos</label>
+        <label><input type="radio" name="divide" value="members"> Participantes por equipo</label>
+        <select id="teamOption">
+          <option value="2">2 </option>
+          <option value="3">3 </option>
+          <option value="4">4 </option>
+          <option value="4">5 </option>
+          <option value="4">6 </option>
+          <option value="4">7 </option>
+          <option value="4">8 </option>
+          <option value="4">9 </option>
+          <option value="4">10 </option>
+
+        </select>
+
+        <h3>3. Título</h3>
+        <input type="text" id="title" placeholder="Ej: Copa del Mundo Qatar 2022" maxlength="50"/>
+
+        <div class="buttons">
+          <button id="clear">Limpiar</button>
+          <button id="generate">Generar equipos</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="result" class="result hidden">
+      <h2 id="resultTitle"></h2>
+      <div id="teamsContainer"></div>
+
+      <div class="action-buttons">
+        <button id="download">Descargar JPG</button>
+        <button id="copy">Copiar al portapapeles</button>
+        <button id="copyCols">Copiar por equipos</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="B.js"></script>
+</body>
+</html>
