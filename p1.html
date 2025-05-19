@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Dinámica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Banner superior - Solo muestra el resultado -->
+        <div class="top-banner">
+            <div id="resultado" class="resultado"></div>
+        </div>
+        
+        <!-- Botones de acción principales -->
+        <div class="action-buttons">
+            <button id="btnIniciar" class="btn btn-primary">Iniciar</button>
+            <button id="btnReiniciar" class="btn btn-secondary">Reiniciar</button>
+        </div>
+        
+        <!-- Contenido principal -->
+        <div class="content-wrapper">
+            <!-- Sección de la ruleta -->
+            <div class="ruleta-section">
+                <div class="ruleta-container">
+                    <canvas id="ruletaCanvas" class="ruleta-canvas"></canvas>
+                    <div class="ruleta-center">
+                        <span id="ruletaText">haz clic para girarlo</span>
+                    </div>
+                    <div class="ruleta-pointer"></div>
+                </div>
+            </div>
+            
+            <!-- Sección de opciones -->
+            <div class="options-section">
+                <div class="textarea-container">
+                    <textarea id="optionsTextarea" rows="12" cols="15">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</textarea>
+                </div>
+                
+                <div class="control-buttons">
+                    <button id="btnTitulo" class="btn-control">Título</button>
+                    <button id="btnEditar" class="btn-control">Editar</button>
+                    <button id="btnEsconder" class="btn-control">esconder...</button>
+                </div>
+                
+                <div class="keyboard-shortcuts">
+                    <div class="shortcut"><span class="key">SPACE</span> Giralo</div>
+                    <div class="shortcut"><span class="key">S</span> Ocultar el elemento seleccionado</div>
+                    <div class="shortcut"><span class="key">R</span> Reiniciar</div>
+                    <div class="shortcut"><span class="key">E</span> Editar</div>
+                    <div class="shortcut"><span class="key">F</span> Pantalla completa</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
